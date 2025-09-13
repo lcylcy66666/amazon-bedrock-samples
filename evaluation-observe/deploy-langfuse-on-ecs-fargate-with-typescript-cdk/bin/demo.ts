@@ -4,7 +4,7 @@ import { AwsSolutionsChecks } from "cdk-nag";
 import { LangfuseDemoStack } from "../lib/stack";
 
 const app = new cdk.App();
-new LangfuseDemoStack(app, "LangfuseDemo", {
+new LangfuseDemoStack(app, "LangfuseDemoV2", {
   // This stack cannot be synthesized as environment-agnostic (skipping `env`) when
   // `useCognitoAuth` is `true`, because it needs to create a unique domain prefix for Cognito and
   // uses the target Account ID and Region to do this.
